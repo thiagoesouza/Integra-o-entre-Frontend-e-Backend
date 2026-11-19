@@ -1,0 +1,80 @@
+/* ARQUIVO: index.css */
+/* :root é onde definimos nossas "variáveis".
+Se quisermos mudar a cor principal do site inteiro, mudamos apenas aqui.
+*/
+:root {
+  /* Fontes */
+  --font-family-primary: "Inter", "Roboto", sans-serif;
+  /* Paleta de Cores (Tema Claro/Profissional) */
+  --bg-page: #f0f2f5;
+  /* Cinza muito claro para o fundo da tela */
+  --bg-card: #ffffff;
+  /* Branco puro para os cartões */
+  --text-primary: #1e293b;
+  /* Cinza escuro (quase preto) para leitura fácil */
+  --text-secondary: #64748b;
+  /* Cinza médio para textos de apoio */
+  /* Cores de Ação */
+  --primary-color: #6366f1;
+  /* Indigo (Roxo azulado) para botões principais */
+  --primary-hover: #4f46e5;
+  /* Indigo mais escuro para quando passar o mouse */
+  --danger-color: #ef4444;
+  /* Vermelho suave para erros/exclusão */
+  /* Efeitos Visuais */
+  --shadow-soft:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --border-radius: 12px;
+  /* Bordas arredondadas modernas */
+}
+
+/* Configuração base do corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-page);
+  /* Aplica o fundo cinza claro */
+  color: var(--text-primary);
+  font-family: var(--font-family-primary);
+  -webkit-font-smoothing: antialiased;
+  /* Deixa a fonte mais nítida */
+}
+
+/* Títulos (h1, h2, etc) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  /* Negrito forte */
+}
+
+/* --- CLASSES UTILITÁRIAS (Reutilizáveis) --- */
+/* Estilo padrão para os "Cartões" (Formulário e Tabela) */
+.custom-card {
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  /* Sombra suave para dar efeito de "flutuar" */
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  /* Borda muito fina cinza */
+}
+
+/* Estilização extra para a Tabela do Material UI */
+.MuiTableHead-root {
+  background-color: #f8fafc;
+  /* Cabeçalho da tabela levemente cinza */
+}
+
+.MuiTableCell-head {
+  color: var(--text-secondary) !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.05em;
+}
